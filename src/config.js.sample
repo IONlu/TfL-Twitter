@@ -1,0 +1,21 @@
+var config = {};
+
+config.twitter = {
+  consumer_key:         '',
+  consumer_secret:      '',
+  access_token_key:     '',
+  access_token_secret:  ''
+};
+
+config.amountOfDepartures = 3;
+
+config.db = {
+  host     : '',
+  user     : '',
+  password : '',
+  database : ''
+};
+
+config.track = 'tfllu 🚌,tfllu 🚄,tfllu 🚅,tfllu 🚆,tfllu 🚂';
+
+module.exports = config;
