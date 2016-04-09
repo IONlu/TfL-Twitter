@@ -11,7 +11,7 @@ var twit = new twitter( config.twitter );
 
 function getDepartures(handle, tw_id) {
 
-    request('https://api.tfl.lu/departures/200901011', function (error, response, body) {
+    request('https://api.tfl.lu/departures/200415009', function (error, response, body) {
         if (!error && response.statusCode == 200) {
 
             var APIdepartures = JSON.parse(body);
@@ -35,7 +35,13 @@ function getDepartures(handle, tw_id) {
 
             twit.updateStatus(
                 '@' + handle + "\n" + departures,
-                {in_reply_to_status_id: tw_id},
+                {
+                    in_reply_to_status_id: tw_id,
+                    lat: 49.598666,
+                    long: 6.1330168,
+                    display_coordinates: true,
+                    trim_user: true
+                },
                 function (err, data) {
                     console.log(data);
                 }
