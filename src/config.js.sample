@@ -16,6 +16,6 @@ config.db = {
   database : ''
 };
 
-config.track = 'tfllu 🚌,tfllu 🚄,tfllu 🚅,tfllu 🚆,tfllu 🚂';
+config.track = 'tfllu 🚌,tfllu 🚍,tfllu 🚎,tfllu 🚐,tfllu 🚄,tfllu 🚅,tfllu 🚆,tfllu 🚂,tfllu🚃 tfllu 🚋,tfllu 🚝,tfllu 🚈,tfllu 🚇,tfllu 🚊,tfllu 🚉';
 
 module.exports = config;
